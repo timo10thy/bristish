@@ -1,0 +1,390 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Top Navigation Bar -->
+    <header class="bg-white border-b border-gray-200 px-8 py-4">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div>
+                <img src="/src/assets/image/British _School.png" alt="The British School" class="h-12">
+            </div>
+
+            <!-- Right Side: Breadcrumb, Bell, User -->
+            <div class="flex items-center gap-8">
+                <!-- Breadcrumb -->
+                <div class="flex items-center gap-2 text-sm text-gray-500">
+                    <span>...Administrator/</span>
+                    <span class="text-orange-500">Dashboard</span>
+                </div>
+
+                <!-- Bell Icon -->
+                <button class="relative">
+                    <i class='bx bx-bell text-2xl text-gray-600'></i>
+                    <span class="absolute top-0 right-0 w-2 h-2 bg-green-500 rounded-full"></span>
+                </button>
+
+                <!-- User Profile -->
+                <div class="flex items-center gap-3">
+                    <img src="/src/assets/image/user.png" alt="User" class="w-24 rounded-full">
+                    <span class="text-gray-700">User</span>
+                    <i class='bx bx-chevron-down text-gray-600'></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex">
+        <!-- Left Sidebar -->
+        <aside class="w-20 bg-slate-800 min-h-screen flex flex-col items-center py-6 gap-6 rounded-3xl">
+            <!-- Dashboard Icon (Active) -->
+            <div class="w-16 h-16 bg-slate-700 rounded-full flex items-center justify-center">
+                <i class='bx bx-grid-alt text-white text-2xl'></i>
+            </div>
+
+            <!-- Students Icon -->
+            <div class="w-12 h-12 flex items-center justify-center">
+                <i class='bx bx-user text-white text-2xl'></i>
+            </div>
+
+            <!-- Staff Icon -->
+            <div class="w-12 h-12 flex items-center justify-center">
+                <i class='bx bx-laptop text-white text-2xl'></i>
+            </div>
+
+            <!-- Subjects Icon -->
+            <div class="w-12 h-12 flex items-center justify-center">
+                <span class="text-white text-xl font-bold">ABC</span>
+            </div>
+
+            <!-- Classes Icon -->
+            <div class="w-12 h-12 flex items-center justify-center">
+                <i class='bx bx-chalkboard text-white text-2xl'></i>
+            </div>
+
+            <!-- Parents Icon -->
+            <div class="w-12 h-12 flex items-center justify-center">
+                <i class='bx bx-group text-white text-2xl'></i>
+            </div>
+
+            <!-- Messages Icon -->
+            <div class="w-12 h-12 flex items-center justify-center">
+                <i class='bx bx-message-square-dots text-white text-2xl'></i>
+            </div>
+
+            <!-- Finance Icon -->
+            <div class="w-12 h-12 flex items-center justify-center">
+                <i class='bx bx-line-chart text-white text-2xl'></i>
+            </div>
+
+            <!-- Reports Icon -->
+            <div class="w-12 h-12 flex items-center justify-center">
+                <i class='bx bx-file text-white text-2xl'></i>
+            </div>
+
+            <!-- Spacer -->
+            <div class="flex-1"></div>
+
+            <!-- Settings Icon (Bottom) -->
+            <div class="w-12 h-12 flex items-center justify-center">
+                <i class='bx bx-cog text-white text-2xl'></i>
+            </div>
+
+            <!-- Info Icon (Bottom) -->
+            <div class="w-12 h-12 flex items-center justify-center">
+                <i class='bx bx-info-circle text-white text-2xl'></i>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="flex-1 p-8">
+            <div class="flex gap-6">
+                <!-- Left Section -->
+                <div class="flex-1">
+                    <!-- Search Bar -->
+                    <div class="mb-6 flex justify-end">
+                        <div class="relative">
+                            <i class='bx bx-search absolute left-4 top-3.5 text-gray-400 text-xl'></i>
+                            <input type="text" placeholder="Search..."
+                                class="pl-12 pr-4 py-3 border border-gray-300 rounded-lg">
+                        </div>
+                    </div>
+
+                    <!-- Stats Cards -->
+                    <div class="grid grid-cols-3 gap-6 mb-8">
+                        <!-- Students Card -->
+                        <div class="bg-white p-6 rounded-lg border border-gray-200">
+                            <div class="flex items-center gap-4">
+                              
+                                <div
+                                    class="w-16 h-12 border-4 border-orange-500 rounded-full flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-500">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                                      </svg>
+                                      
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600 mb-1">STUDENTS</p>
+                                    <p class="text-xs text-gray-500 mb-2">
+                                        <span class="text-gray-700">■ MALE (51%)</span>
+                                        <span class="text-gray-400 ml-3">■ FEMALE (49%)</span>
+                                    </p>
+                                    <p class="text-3xl font-bold text-gray-800">308</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Staff Card -->
+                        <div class="bg-white p-6 rounded-lg border border-gray-200">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-16 h-12  border-4 border-orange-500 rounded-full flex items-center justify-center">
+                                    <i class='bx bx-laptop text-2xl text-gray-700'></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600 mb-1">STAFF</p>
+                                    <p class="text-xs text-gray-500 mb-2">
+                                        <span class="text-gray-700">■ MALE (55%)</span>
+                                        <span class="text-gray-400 ml-3">■ FEMALE (45%)</span>
+                                    </p>
+                                    <p class="text-3xl font-bold text-gray-800">100</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Subjects Card -->
+                        <div class="bg-white p-6 rounded-lg border border-gray-200">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-16 h-12  border-4 border-orange-500 rounded-full flex items-center justify-center">
+                                    <span class="text-xl font-bold text-gray-700">ABC</span>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600 mb-1">SUBJECTS</p>
+                                    <p class="text-xs text-gray-500 mb-2">
+                                        <span class="text-blue-600">■ SCIENCE (50%)</span>
+                                        <span class="text-orange-400 ml-3">■ ARTS (50%)</span>
+                                    </p>
+                                    <p class="text-3xl font-bold text-gray-800">50</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Charts Row -->
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <!-- Attendance Summary Chart -->
+                        <div class="bg-white p-6 rounded-lg border border-gray-200">
+                            <div class="flex items-center justify-between mb-6">
+                                <h3 class="text-lg font-semibold text-gray-700">Attendance Summary</h3>
+                                <div class="flex gap-3">
+                                    <select class="px-3 py-1 border border-gray-300 rounded text-sm">
+                                        <option>Monthly</option>
+                                        <option>Weekly</option>
+                                        <option>Daily</option>
+                                    </select>
+                                    <select class="px-3 py-1 border border-gray-300 rounded text-sm">
+                                        <option>Students</option>
+                                        <option>Staff</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Chart Placeholder -->
+                            <div class="h-64 bg-linear-to-b from-blue-100 to-transparent rounded">
+                                <img src="/src/assets/image/attendance graph.png" alt="Attendance Chart"
+                                    class="w-full h-full object-contain">
+                            </div>
+                        </div>
+
+                        <!-- Financial Summary Chart -->
+                        <div class="bg-white p-6 rounded-lg border border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-700 mb-6">Financial Summary</h3>
+                            <!-- Chart Placeholder -->
+                            <div class="h-64 object-contain">
+                                <img src="/src/assets/image/financial_graph (1).png" alt="Financial Chart"
+                                    class="w-full h-full object-contain">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recently Registered Users Table -->
+                    <div class="bg-white p-6 rounded-lg border border-gray-200">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-lg font-semibold text-gray-700">Recently registered users</h3>
+                            <a href="#" class="text-sm text-blue-600">view all users</a>
+                        </div>
+
+                        <!-- Table -->
+                        <table class="w-full">
+                            <thead>
+                                <tr class="border-b border-gray-200">
+                                    <th class="text-left py-3 px-4 text-sm font-semibold text-gray-600">Name</th>
+                                    <th class="text-left py-3 px-4 text-sm font-semibold text-gray-600">ID</th>
+                                    <th class="text-left py-3 px-4 text-sm font-semibold text-gray-600">Role</th>
+                                    <th class="text-left py-3 px-4 text-sm font-semibold text-gray-600">Gender</th>
+                                    <th class="text-left py-3 px-4 text-sm font-semibold text-gray-600">Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-4 px-4 text-sm text-gray-700">ActivEdge Technologies</td>
+                                    <td class="py-4 px-4 text-sm text-gray-600">AET154-5671</td>
+                                    <td class="py-4 px-4 text-sm text-gray-600">Teacher</td>
+                                    <td class="py-4 px-4 text-sm text-gray-600">Male</td>
+                                    <td class="py-4 px-4 text-sm text-gray-600">activedgetecnologies@gmail...</td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-4 px-4 text-sm text-gray-700">ActivEdge Technologies</td>
+                                    <td class="py-4 px-4 text-sm text-gray-600">AET154-5671</td>
+                                    <td class="py-4 px-4 text-sm text-gray-600">Teacher</td>
+                                    <td class="py-4 px-4 text-sm text-gray-600">Male</td>
+                                    <td class="py-4 px-4 text-sm text-gray-600">activedgetecnologies@gmail...</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-4 px-4 text-sm text-gray-700">ActivEdge Technologies</td>
+                                    <td class="py-4 px-4 text-sm text-gray-600">AET154-5671</td>
+                                    <td class="py-4 px-4 text-sm text-gray-600">Teacher</td>
+                                    <td class="py-4 px-4 text-sm text-gray-600">Male</td>
+                                    <td class="py-4 px-4 text-sm text-gray-600">activedgetecnologies@gmail...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar -->
+                <div class="w-80">
+                    <!-- Calendar -->
+                    <div class="bg-white p-6 rounded-lg border border-gray-200 mb-6">
+                        <!-- Month Navigation -->
+                        <div class="flex items-center justify-between mb-4">
+                            <button><i class='bx bx-chevron-left text-gray-400'></i></button>
+                            <h3 class="font-semibold text-gray-700">April, 2022</h3>
+                            <button><i class='bx bx-chevron-right text-gray-400'></i></button>
+                        </div>
+
+                        <!-- Calendar Grid -->
+                        <div class="grid grid-cols-7 gap-2 text-center">
+                            <!-- Day Headers -->
+                            <div class="text-xs text-orange-500 font-medium">Sun</div>
+                            <div class="text-xs text-gray-600 font-medium">Mon</div>
+                            <div class="text-xs text-gray-600 font-medium">Tue</div>
+                            <div class="text-xs text-gray-600 font-medium">Wed</div>
+                            <div class="text-xs text-gray-600 font-medium">Thu</div>
+                            <div class="text-xs text-gray-600 font-medium">Fri</div>
+                            <div class="text-xs text-gray-600 font-medium">Sat</div>
+
+                            <!-- Calendar Days -->
+                            <div class="text-xs text-gray-300 py-2">28</div>
+                            <div class="text-xs text-gray-300 py-2">29</div>
+                            <div class="text-xs text-gray-300 py-2">30</div>
+                            <div class="text-xs text-gray-300 py-2">31</div>
+                            <div class="text-xs text-gray-700 py-2 bg-blue-400 text-white rounded">1</div>
+                            <div class="text-xs text-gray-700 py-2">2</div>
+                            <div class="text-xs text-gray-700 py-2">3</div>
+
+                            <div class="text-xs text-gray-700 py-2">4</div>
+                            <div class="text-xs text-gray-700 py-2">5</div>
+                            <div class="text-xs text-gray-700 py-2">6</div>
+                            <div class="text-xs text-gray-700 py-2">7</div>
+                            <div class="text-xs text-gray-700 py-2">8</div>
+                            <div class="text-xs text-gray-700 py-2">9</div>
+                            <div class="text-xs text-orange-500 py-2">10</div>
+
+                            <div class="text-xs text-gray-700 py-2">11</div>
+                            <div class="text-xs text-gray-700 py-2">12</div>
+                            <div class="text-xs text-gray-700 py-2">13</div>
+                            <div class="text-xs text-gray-700 py-2">14</div>
+                            <div class="text-xs text-gray-700 py-2">15</div>
+                            <div class="text-xs text-gray-700 py-2">16</div>
+                            <div class="text-xs text-orange-500 py-2 relative">
+                                17
+                                <span
+                                    class="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-green-500 rounded-full"></span>
+                            </div>
+
+                            <div class="text-xs text-gray-700 py-2">18</div>
+                            <div class="text-xs text-gray-700 py-2">19</div>
+                            <div class="text-xs text-gray-700 py-2">20</div>
+                            <div class="text-xs text-gray-700 py-2">21</div>
+                            <div class="text-xs text-gray-700 py-2">22</div>
+                            <div class="text-xs text-gray-700 py-2">23</div>
+                            <div class="text-xs text-orange-500 py-2 relative">
+                                24
+                                <span
+                                    class="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-orange-500 rounded-full"></span>
+                            </div>
+
+                            <div class="text-xs text-gray-700 py-2">25</div>
+                            <div class="text-xs text-gray-700 py-2">26</div>
+                            <div class="text-xs text-gray-700 py-2">27</div>
+                            <div class="text-xs text-gray-700 py-2">28</div>
+                            <div class="text-xs text-gray-700 py-2">29</div>
+                            <div class="text-xs text-gray-700 py-2">30</div>
+                            <div class="text-xs text-gray-300 py-2">1</div>
+                        </div>
+                    </div>
+
+                    <!-- Upcoming Events -->
+                    <div class="bg-white p-6 rounded-lg border border-gray-200">
+                        <h3 class="font-semibold text-gray-700 mb-4">Upcoming events</h3>
+
+                        <!-- Filter Buttons -->
+                        <div class="flex gap-2 mb-4">
+                            <button class="px-4 py-1 bg-slate-700 text-white rounded-full text-xs">All</button>
+                            <button class="px-4 py-1 text-gray-500 text-xs">Today</button>
+                            <button class="px-4 py-1 text-gray-500 text-xs">Weekly</button>
+                            <button class="px-4 py-1 text-gray-500 text-xs">Monthly</button>
+                        </div>
+
+                        <!-- Event Cards -->
+                        <div class="space-y-3">
+                            <!-- Yellow Event -->
+                            <div class="bg-yellow-50 p-4 rounded-lg">
+                                <p class="font-medium text-gray-700 text-sm mb-2">Saturday</p>
+                                <p class="text-xs text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Diam.</p>
+                                <p class="text-xs text-gray-400 text-right">3rd April 2022</p>
+                            </div>
+
+                            <!-- Green Event -->
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <p class="font-medium text-gray-700 text-sm mb-2">Saturday</p>
+                                <p class="text-xs text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Diam.</p>
+                                <p class="text-xs text-gray-400 text-right">3rd April 2022</p>
+                            </div>
+
+                            <!-- Pink Event -->
+                            <div class="bg-pink-50 p-4 rounded-lg">
+                                <p class="font-medium text-gray-700 text-sm mb-2">Saturday</p>
+                                <p class="text-xs text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Diam.</p>
+                                <p class="text-xs text-gray-400 text-right">3rd April 2022</p>
+                            </div>
+
+                            <!-- Blue Event -->
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <p class="font-medium text-gray-700 text-sm mb-2">Saturday</p>
+                                <p class="text-xs text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Diam.</p>
+                                <p class="text-xs text-gray-400 text-right">3rd April 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

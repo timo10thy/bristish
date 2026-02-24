@@ -31,7 +31,7 @@
         </div>
     </nav>
     <!-- hero -->
-    <section class="flex mb-20">
+    <section class="flex mb-16 h-screen">
         <!-- left -->
         <div class="flex flex-col items-start gap-4">
 
@@ -69,19 +69,19 @@
             <div class="flex pl-12 gap-6">
                 <img src="/src/assets/image/ielts_4 1IELTS.png" alt="">
                 <img src="/src/assets/image/TOEFL.png" alt="">
-                
+
             </div>
 
         </div>
         <!-- right -->
         <div>
-            <img src="/src/assets/image/hero-3-cover.png" alt="" class="absolute top-0 right-0 -z-10  w-[600px]">
+            <img src="/src/assets/image/hero-3-cover.png" alt="" class="absolute top-0 right-0 -z-10  w-150">
         </div>
     </section>
 
     <!--second  section  -->
 
-    <section class="flex">
+    <section class="flex container px-8">
         <!-- left -->
 
         <div>
@@ -89,46 +89,67 @@
         </div>
 
         <!-- second secection right -->
-         <div class="flex flex-col items-start gap-4">
+        <div class="flex flex-col items-start px-8 py-6 bg-white rounded-2xl shadow-lg w-full max-w-md">
+            <img src="/src/assets/image/British _School.png" alt="" class="w-24 mb-4">
 
-            <img src="/src/assets/image/Ellipse 5.png" alt="" class="w-8 ml-8">
-
-            <div class="text-5xl font-bold leading-tight 
-                        bg-linear-to-r from-blue-400 via-yellow-300 to-blue-400 
-                        bg-clip-text text-transparent pl-12">
-
-                <p>BETTER</p>
-                <p>FUTURE FOR</p>
-                <p>YOUR KIDS</p>
+            <!-- registration -->
+        
+            <p class="text-2xl font-bold mb-2">Registration Form</p>
+        
+            <div class="mb-6">
+                <p class="text-gray-600">
+                    Already have an account? 
+                    <a href="#" class="text-[#d28721] font-semibold">Login</a>
+                </p>
             </div>
-
-            <div class="pl-12">
-                <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Ullamcorper augue cras massa <br> dolor
-                    volutpat quam risus venenatis.</p>
-            </div> 
-            <!-- right button -->
-            <!-- <div class="flex gap-8 pl-12">
-                <div class="">
-                    <a href="#"
-                        class="flex items-center justify-center px-6 py-3  bg-linear-to-r from-blue-400 via-yellow-300 to-blue-40 rounded-full gap-2">
-                        <img src="/src/assets/image/Vector.png" alt="" class="w-4 h-auto text-gray-300">
-                        JOIN US TODAY
-                    </a>
+        
+            <!-- registration form -->
+            <form class="w-full flex flex-col gap-4">
+                <!-- First & Last Name -->
+                <div class="flex gap-4">
+                    <input type="text" placeholder="First Name" class="w-1/2 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    <input type="text" placeholder="Last Name" class="w-1/2 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
                 </div>
-
-                <div class="flex items-center">
-                    <img src="/src/assets/image/Group 4play.svg" alt="" class="w-8">
-                    <span>Watch our welcome video</span>
+        
+                <!-- Email & Confirm Email -->
+                <input type="email" placeholder="Email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+                <input type="email" placeholder="Confirm Email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+        
+                <!-- Phone & Token (same row) -->
+                <div class="flex gap-4">
+                    <input type="text" placeholder="Phone Number" class="w-1/2 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    <input type="text" placeholder="Token" class="w-1/2 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
                 </div>
-            </div>
+        
+                <!-- Gender & Department (same row) -->
+                <div class="flex gap-4">
+                    <div class="flex items-center gap-4">
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="gender" value="male" class="accent-blue-400">
+                            Male
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="gender" value="female" class="accent-pink-400">
+                            Female
+                        </label>
+                    </div>
+        
+                    <select class="w-1/2 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        <option value="" disabled selected>Select Department</option>
 
-            <div class="flex pl-12 gap-6">
-                <img src="/src/assets/image/ielts_4 1IELTS.png" alt="">
-                <img src="/src/assets/image/TOEFL.png" alt="">
-                
-            </div> -->
-
+                    </select>
+                </div>
+        
+                <!-- Submit Button -->
+                <button type="submit" class="w-full bg-[#d28721] hover:bg-[#b76b18] text-white py-3 rounded-lg font-semibold transition-colors mt-2">
+                    Register
+                </button>
+            </form>
+        </div>
     </section>
+    <div class="bg-red-300 w-16 h-16 border rounded-full">
+
+    </div>
 </body>
 
 </html>
