@@ -1,485 +1,252 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>British School Dashboard – EXACT MATCH</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body class="bg-gray-50">
-    
-    <!-- Top Navigation Bar -->
-    <header class="bg-white border-b border-gray-200 px-8 py-4">
-        <div class="flex items-center justify-between">
-            <!-- Logo -->
-            <a href="/index.html">
-                <div>
-                    <img src="/src/assets/image/British _School.png" alt="">
-                </div>
-            </a>
+<body class="bg-[#f4f6fb] font-sans antialiased">
 
-            <!-- Right Side: Search, Bell, User -->
-            <div class="flex items-center gap-8">
-                <!-- Search Bar -->
-                <div class="relative">
-                    <i class='bx bx-search absolute left-4 top-3 text-gray-400 text-xl'></i>
-                    <input type="text" placeholder="Search..." 
-                           class="pl-12 pr-4 py-2 border border-gray-300 rounded-lg w-96">
-                </div>
+<!-- ========== NAVBAR ========= -->
+<header class="bg-white px-6 lg:px-10 py-4 border-b border-gray-200 flex items-center justify-between">
+  <div class="flex items-center">
+    <img src="/src/assets/image/British _School.png" class="h-10 w-auto">
+  </div>
 
-                <!-- Bell Icon -->
-                <button class="relative">
-                    <i class='bx bx-bell text-2xl text-gray-600'></i>
-                    <span class="absolute top-0 right-0 w-2 h-2 bg-green-500 rounded-full"></span>
-                </button>
-
-                <!-- User Profile -->
-                <div class="flex items-center gap-3">
-                    <img src="/images/Gitimg2.jpeg" alt="User" class="w-10 h-10 rounded-full">
-                    <span class="text-gray-700">User</span>
-                    <i class='bx bx-chevron-down text-gray-600'></i>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="flex">
-        <!-- Left Sidebar -->
-        <aside class="w-24 bg-gray-50 min-h-screen py-8 px-4">
-            <div class="w-16 bg-slate-800 rounded-3xl flex flex-col items-center py-6 gap-6">
-                <!-- Dashboard Icon (Active) -->
-                <div class="flex items-center justify-center text-[#ea9c09]">
-                    <i class='bx bxs-grid-alt text-[#ea9c09] text-3xl' style='color:#ea9c09'  ></i>
-                </div>
-
-                <!-- Students Icon -->
-                <a href="/pages/students_tab.html">
-                    <div class="w-10 h-10 flex items-center justify-center">
-                    <img src="/images/Vector (32).png" alt="">
-                </div>
-                </a>
-
-                <!-- Assignment Icon -->
-                <div class="w-10 h-10 flex items-center justify-center">
-                    <i class='bx bx-clipboard text-white text-xl'></i>
-                </div>
-
-                <!-- Classes Icon -->
-                <div class="w-10 h-10 flex items-center justify-center">
-                    <i class='bx bx-book text-white text-xl'></i>
-                </div>
-
-                <!-- Notes Icon -->
-                <div class="w-10 h-10 flex items-center justify-center">
-                    <i class='bx bx-note text-white text-xl'></i>
-                </div>
-
-                <!-- Spacer -->
-                <div class="flex-1"></div>
-
-                <!-- Info Icon (Bottom) -->
-                <div class="w-10 h-10 flex items-center justify-center">
-                    <i class='bx bx-info-circle text-white text-xl'></i>
-                </div>
-
-                <!-- Settings Icon (Bottom) -->
-                <div class="w-10 h-10 flex items-center justify-center">
-                    <i class='bx bx-cog text-white text-xl'></i>
-                </div>
-            </div>
-        </aside>
-
-        <!-- Main Content Area -->
-        <main class="flex-1 p-8">
-            <div class="flex gap-6">
-                <!-- Left Section -->
-                <div class="flex-1">
-                    
-                    <!-- Good Morning Section -->
-                    <div class="mb-8">
-                        <h1 class="text-5xl font-bold text-slate-800 mb-2 flex gap-2.5">
-                            Good Morning <span class="text-5xl"><img src="/images/💫.png" alt=""></span>
-                        </h1>
-                        <h2 class="text-4xl font-bold text-slate-700">Mr. Johnson Maduka</h2>
-                    </div>
-
-                    <!-- Syllabus Guide & Students Card Row -->
-                    <div class="grid grid-cols-2 gap-6 mb-8">
-                        <!-- Syllabus Guide -->
-                        <div class="bg-slate-800 p-6 rounded-2xl">
-                            <h3 class="text-white text-xl font-semibold mb-6">Syllabus Guide</h3>
-                            
-                            <!-- Course Cards Carousel -->
-                            <div class="flex gap-4 mb-4">
-                                <!-- Card 1 - Basic Design (Completed) -->
-                                <div class="bg-white rounded-xl p-4 w-64 relative">
-                                    <div class="absolute top-3 right-3">
-                                        <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-                                            <i class='bx bx-check text-white text-xl'></i>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-16 h-16 bg-orange-100 rounded-lg flex items-center justify-center">
-                                            <i class='bx bx-palette text-orange-500 text-3xl'></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="font-bold text-slate-800 text-lg">Basic Design</h4>
-                                            <p class="text-sm text-gray-500">Introduction to Graphics Design</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Card 2 - Basic Design (Not Completed) -->
-                                <div class="bg-white rounded-xl p-4 w-64 opacity-50">
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center">
-                                            <i class='bx bx-palette text-red-500 text-3xl'></i>
-                                        </div>
-                                        <div>
-                                            <h4 class="font-bold text-slate-800 text-lg">Basic Design</h4>
-                                            <p class="text-sm text-gray-500">Introduction to Graphics Design</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Carousel Dots -->
-                            <div class="flex justify-center gap-2">
-                                <div class="w-2 h-2 bg-gray-400 rounded-full"></div>
-                                <div class="w-2 h-2 bg-gray-600 rounded-full"></div>
-                                <div class="w-2 h-2 bg-gray-400 rounded-full"></div>
-                            </div>
-                        </div>
-
-                        <!-- Students Card & Student Rankings -->
-                        <div>
-                            <!-- Students Stats -->
-                            <div class="bg-white p-6 rounded-lg border border-gray-200 mb-6">
-                                <div class="flex items-center gap-4">
-                                    <div class="w-[200px] h-[200px] flex items-center justify-center">
-                                        <img src="/images/Group 6.png" alt="">
-                                    </div>
-                                    <div>
-                                        <p class="text-sm text-gray-600 mb-1">STUDENTS</p>
-                                        <p class="text-xs text-gray-500 mb-2">
-                                            <span class="text-gray-700">■ MALE (61%)</span>
-                                            <span class="text-gray-400 ml-3">■ FEMALE (39%)</span>
-                                        </p>
-                                        <p class="text-4xl font-bold text-gray-800">308</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Student Rankings -->
-                            <div>
-                                <h3 class="text-lg font-semibold text-gray-700 mb-4">Student Rankings</h3>
-                                <div class="space-y-3">
-                                    <!-- Rank 1 -->
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-8 h-8 bg-orange-400 rounded-full flex items-center justify-center text-white text-sm font-bold">1</div>
-                                        <p class="text-gray-500">ActivEdge Technologies</p>
-                                    </div>
-                                    <!-- Rank 2 -->
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-8 h-8 bg-orange-300 rounded-full flex items-center justify-center text-white text-sm font-bold">2</div>
-                                        <p class="text-gray-500">ActivEdge Technologies</p>
-                                    </div>
-                                    <!-- Rank 3 -->
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-8 h-8 bg-orange-200 rounded-full flex items-center justify-center text-white text-sm font-bold">3</div>
-                                        <p class="text-gray-500">ActivEdge Technologies</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Current Assignments Section -->
-                    <div class="mb-8">
-                        <div class="flex items-center gap-3 mb-6">
-                            <h3 class="text-xl font-semibold text-gray-700">Current Assignments</h3>
-                            <i class='bx bx-play-circle text-2xl text-gray-700'></i>
-                        </div>
-
-                        <!-- Assignment Cards Carousel -->
-                        <div class="flex gap-6">
-                            <!-- Assignment Card 1 -->
-                            <div class="bg-white p-6 rounded-lg border border-gray-200 w-80">
-                                <h4 class="font-bold text-slate-800 text-lg mb-2">Basic Design</h4>
-                                <p class="text-sm text-gray-600 mb-4">Introduction to Graphics Design</p>
-                                
-                                <div class="flex items-center gap-8 mb-4 text-sm text-gray-500">
-                                    <div class="flex items-center gap-2">
-                                        <i class='bx bx-calendar'></i>
-                                        <span>25th March 2022</span>
-                                    </div>
-                                    <div class="flex items-center gap-2">
-                                        <i class='bx bx-calendar text-red-400'></i>
-                                        <span>8th April 2022</span>
-                                    </div>
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <div class="flex items-center gap-2 text-sm">
-                                        <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-xs">32</div>
-                                        <span class="text-gray-600">Submitted</span>
-                                    </div>
-                                    <div class="flex items-center gap-2 text-sm">
-                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 text-xs">0</div>
-                                        <span class="text-gray-600">Not Submitted</span>
-                                    </div>
-                                </div>
-
-                                <div class="mt-4 h-2 bg-gray-200 rounded-full overflow-hidden">
-                                    <div class="h-full bg-orange-400 w-full"></div>
-                                </div>
-                            </div>
-
-                            <!-- Assignment Card 2 -->
-                            <div class="bg-white p-6 rounded-lg border border-gray-200 w-80">
-                                <h4 class="font-bold text-slate-800 text-lg mb-2">Basic Design</h4>
-                                <p class="text-sm text-gray-600 mb-4">Introduction to Graphics Design</p>
-                                
-                                <div class="flex items-center gap-8 mb-4 text-sm text-gray-500">
-                                    <div class="flex items-center gap-2">
-                                        <i class='bx bx-calendar'></i>
-                                        <span>25th March 2022</span>
-                                    </div>
-                                    <div class="flex items-center gap-2">
-                                        <i class='bx bx-calendar text-red-400'></i>
-                                        <span>8th April 2022</span>
-                                    </div>
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <div class="flex items-center gap-2 text-sm">
-                                        <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-xs">32</div>
-                                        <span class="text-gray-600">Submitted</span>
-                                    </div>
-                                    <div class="flex items-center gap-2 text-sm">
-                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 text-xs">0</div>
-                                        <span class="text-gray-600">Not Submitted</span>
-                                    </div>
-                                </div>
-
-                                <div class="mt-4 h-2 bg-gray-200 rounded-full overflow-hidden">
-                                    <div class="h-full bg-orange-400 w-full"></div>
-                                </div>
-                            </div>
-
-                            <!-- Assignment Card 3 -->
-                            <div class="bg-white p-6 rounded-lg border border-gray-200 w-80">
-                                <h4 class="font-bold text-slate-800 text-lg mb-2">Basic Design</h4>
-                                <p class="text-sm text-gray-600 mb-4">Introduction to Graphics Design</p>
-                                
-                                <div class="flex items-center gap-8 mb-4 text-sm text-gray-500">
-                                    <div class="flex items-center gap-2">
-                                        <i class='bx bx-calendar'></i>
-                                        <span>25th March 2022</span>
-                                    </div>
-                                    <div class="flex items-center gap-2">
-                                        <i class='bx bx-calendar text-red-400'></i>
-                                        <span>8th April 2022</span>
-                                    </div>
-                                </div>
-
-                                <div class="flex items-center gap-4">
-                                    <div class="flex items-center gap-2 text-sm">
-                                        <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-xs">32</div>
-                                        <span class="text-gray-600">Submitted</span>
-                                    </div>
-                                    <div class="flex items-center gap-2 text-sm">
-                                        <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 text-xs">0</div>
-                                        <span class="text-gray-600">Not Submitted</span>
-                                    </div>
-                                </div>
-
-                                <div class="mt-4 h-2 bg-gray-200 rounded-full overflow-hidden">
-                                    <div class="h-full bg-orange-400 w-full"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Carousel Dots -->
-                        <div class="flex justify-center gap-2 mt-6">
-                            <div class="w-2 h-2 bg-gray-400 rounded-full"></div>
-                            <div class="w-2 h-2 bg-gray-800 rounded-full"></div>
-                            <div class="w-2 h-2 bg-gray-400 rounded-full"></div>
-                        </div>
-                    </div>
-
-                    <!-- Student Attendance Table -->
-                    <div class="bg-white p-6 rounded-lg border border-gray-200">
-                        <div class="flex items-center justify-between mb-6">
-                            <h3 class="text-lg font-semibold text-gray-700">Student Attendance</h3>
-                            <select class="px-4 py-2 border border-gray-300 rounded text-sm">
-                                <option>Week 6</option>
-                                <option>Week 5</option>
-                                <option>Week 4</option>
-                            </select>
-                        </div>
-
-                        <!-- Table -->
-                        <table class="w-full">
-                            <thead>
-                                <tr class="border-b border-gray-200">
-                                    <th class="text-left py-3 px-4 text-sm font-semibold text-gray-600">Name</th>
-                                    <th class="text-center py-3 px-4 text-sm font-semibold text-gray-600">Mon</th>
-                                    <th class="text-center py-3 px-4 text-sm font-semibold text-gray-600">Tues</th>
-                                    <th class="text-center py-3 px-4 text-sm font-semibold text-gray-600">Wed</th>
-                                    <th class="text-center py-3 px-4 text-sm font-semibold text-gray-600">Thurs</th>
-                                    <th class="text-center py-3 px-4 text-sm font-semibold text-gray-600">Fri</th>
-                                    <th class="text-center py-3 px-4 text-sm font-semibold text-gray-600"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- Row 1 -->
-                                <tr class="border-b border-gray-100">
-                                    <td class="py-4 px-4 text-sm text-gray-700">ActivEdge Technologies</td>
-                                    <td class="py-4 px-4 text-sm text-center text-gray-600">Present</td>
-                                    <td class="py-4 px-4 text-sm text-center text-red-500">Absent</td>
-                                    <td class="py-4 px-4 text-sm text-center text-gray-600">Present</td>
-                                    <td class="py-4 px-4 text-sm text-center text-gray-600">Present</td>
-                                    <td class="py-4 px-4 text-sm text-center">
-                                        <input type="checkbox" class="w-4 h-4">
-                                    </td>
-                                    <td class="py-4 px-4"></td>
-                                </tr>
-                                <!-- Row 2 -->
-                                <tr class="border-b border-gray-100">
-                                    <td class="py-4 px-4 text-sm text-gray-700">ActivEdge Technologies</td>
-                                    <td class="py-4 px-4 text-sm text-center text-red-500">Absent</td>
-                                    <td class="py-4 px-4 text-sm text-center text-gray-600">Present</td>
-                                    <td class="py-4 px-4 text-sm text-center text-gray-600">Present</td>
-                                    <td class="py-4 px-4 text-sm text-center text-gray-600">Present</td>
-                                    <td class="py-4 px-4 text-sm text-center">
-                                        <input type="checkbox" class="w-4 h-4">
-                                    </td>
-                                    <td class="py-4 px-4"></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- Right Sidebar (Same as Admin Dashboard) -->
-                <div class="w-80">
-                    <!-- Calendar -->
-                    <div class="bg-white p-6 rounded-lg border border-gray-200 mb-6">
-                        <!-- Month Navigation -->
-                        <div class="flex items-center justify-between mb-4">
-                            <button><i class='bx bx-chevron-left text-gray-400'></i></button>
-                            <h3 class="font-semibold text-gray-700">April, 2022</h3>
-                            <button><i class='bx bx-chevron-right text-gray-400'></i></button>
-                        </div>
-
-                        <!-- Calendar Grid -->
-                        <div class="grid grid-cols-7 gap-2 text-center">
-                            <!-- Day Headers -->
-                            <div class="text-xs text-orange-500 font-medium">Sun</div>
-                            <div class="text-xs text-gray-600 font-medium">Mon</div>
-                            <div class="text-xs text-gray-600 font-medium">Tue</div>
-                            <div class="text-xs text-gray-600 font-medium">Wed</div>
-                            <div class="text-xs text-gray-600 font-medium">Thu</div>
-                            <div class="text-xs text-gray-600 font-medium">Fri</div>
-                            <div class="text-xs text-gray-600 font-medium">Sat</div>
-
-                            <!-- Calendar Days -->
-                            <div class="text-xs text-gray-300 py-2">28</div>
-                            <div class="text-xs text-gray-300 py-2">29</div>
-                            <div class="text-xs text-gray-300 py-2">30</div>
-                            <div class="text-xs text-gray-300 py-2">31</div>
-                            <div class="text-xs text-gray-700 py-2 bg-blue-400 text-white rounded">1</div>
-                            <div class="text-xs text-gray-700 py-2">2</div>
-                            <div class="text-xs text-gray-700 py-2">3</div>
-
-                            <div class="text-xs text-gray-700 py-2">4</div>
-                            <div class="text-xs text-gray-700 py-2">5</div>
-                            <div class="text-xs text-gray-700 py-2">6</div>
-                            <div class="text-xs text-gray-700 py-2">7</div>
-                            <div class="text-xs text-gray-700 py-2">8</div>
-                            <div class="text-xs text-gray-700 py-2">9</div>
-                            <div class="text-xs text-orange-500 py-2">10</div>
-
-                            <div class="text-xs text-gray-700 py-2">11</div>
-                            <div class="text-xs text-gray-700 py-2">12</div>
-                            <div class="text-xs text-gray-700 py-2">13</div>
-                            <div class="text-xs text-gray-700 py-2">14</div>
-                            <div class="text-xs text-gray-700 py-2">15</div>
-                            <div class="text-xs text-gray-700 py-2">16</div>
-                            <div class="text-xs text-orange-500 py-2 relative">
-                                17
-                                <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-green-500 rounded-full"></span>
-                            </div>
-
-                            <div class="text-xs text-gray-700 py-2">18</div>
-                            <div class="text-xs text-gray-700 py-2">19</div>
-                            <div class="text-xs text-gray-700 py-2">20</div>
-                            <div class="text-xs text-gray-700 py-2">21</div>
-                            <div class="text-xs text-gray-700 py-2">22</div>
-                            <div class="text-xs text-gray-700 py-2">23</div>
-                            <div class="text-xs text-orange-500 py-2 relative">
-                                24
-                                <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-orange-500 rounded-full"></span>
-                            </div>
-
-                            <div class="text-xs text-gray-700 py-2">25</div>
-                            <div class="text-xs text-gray-700 py-2">26</div>
-                            <div class="text-xs text-gray-700 py-2">27</div>
-                            <div class="text-xs text-gray-700 py-2">28</div>
-                            <div class="text-xs text-gray-700 py-2">29</div>
-                            <div class="text-xs text-gray-700 py-2">30</div>
-                            <div class="text-xs text-gray-300 py-2">1</div>
-                        </div>
-                    </div>
-
-                    <!-- Upcoming Events -->
-                    <div class="bg-white p-6 rounded-lg border border-gray-200">
-                        <h3 class="font-semibold text-gray-700 mb-4">Upcoming events</h3>
-
-                        <!-- Filter Buttons -->
-                        <div class="flex gap-2 mb-4">
-                            <button class="px-4 py-1 bg-slate-700 text-white rounded-full text-xs">All</button>
-                            <button class="px-4 py-1 text-gray-500 text-xs">Today</button>
-                            <button class="px-4 py-1 text-gray-500 text-xs">Weekly</button>
-                            <button class="px-4 py-1 text-gray-500 text-xs">Monthly</button>
-                        </div>
-
-                        <!-- Event Cards -->
-                        <div class="space-y-3">
-                            <!-- Yellow Event -->
-                            <div class="bg-yellow-50 p-4 rounded-lg">
-                                <p class="font-medium text-gray-700 text-sm mb-2">Saturday</p>
-                                <p class="text-xs text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam.</p>
-                                <p class="text-xs text-gray-400 text-right">3rd April 2022</p>
-                            </div>
-
-                            <!-- Green Event -->
-                            <div class="bg-green-50 p-4 rounded-lg">
-                                <p class="font-medium text-gray-700 text-sm mb-2">Saturday</p>
-                                <p class="text-xs text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam.</p>
-                                <p class="text-xs text-gray-400 text-right">3rd April 2022</p>
-                            </div>
-
-                            <!-- Pink Event -->
-                            <div class="bg-pink-50 p-4 rounded-lg">
-                                <p class="font-medium text-gray-700 text-sm mb-2">Saturday</p>
-                                <p class="text-xs text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam.</p>
-                                <p class="text-xs text-gray-400 text-right">3rd April 2022</p>
-                            </div>
-
-                            <!-- Blue Event -->
-                            <div class="bg-blue-50 p-4 rounded-lg">
-                                <p class="font-medium text-gray-700 text-sm mb-2">Saturday</p>
-                                <p class="text-xs text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam.</p>
-                                <p class="text-xs text-gray-400 text-right">3rd April 2022</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
+  <div class="flex items-center gap-6">
+    <div class="relative hidden md:block">
+      <i class='bx bx-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-lg'></i>
+      <input type="text" placeholder="Search..." class="pl-11 pr-6 py-2.5 w-72 bg-gray-100 rounded-xl text-sm outline-none">
     </div>
+    <i class='bx bx-bell text-2xl text-gray-500'></i>
+    <div class="flex items-center gap-3 border  pl-2 pr-5 py-1.5 rounded-xl bg-white">
+      <img src="/src/assets/image/user.png" class="w-42 rounded-full">
+      <span class="text-gray-700 font-medium text-sm">User</span>
+    </div>
+  </div>
+</header>
+
+<!-- ========== FLEX CONTAINER ========= -->
+<div class="flex">
+
+  <!-- ========== SIDEBAR ========= -->
+  <aside class="w-24 bg-[#0f1b3d] min-h-screen flex flex-col items-center py-8 shrink-0">
+    <div class="w-12 h-12 bg-[#25345c] rounded-xl flex items-center justify-center mb-12">
+      <i class='bx bxs-grid-alt text-yellow-400 text-2xl'></i>
+    </div>
+    <div class="flex flex-col gap-8 text-gray-400 text-2xl">
+      <i class='bx bx-user'></i>
+      <i class='bx bx-clipboard'></i>
+      <i class='bx bx-book'></i>
+      <i class='bx bx-note'></i>
+    </div>
+    <div class="flex-1"></div>
+    <div class="flex flex-col gap-6 text-gray-400 text-2xl">
+      <i class='bx bx-help-circle'></i>
+      <i class='bx bx-cog'></i>
+    </div>
+  </aside>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="flex-1 p-7 lg:p-10">
+
+    <!-- greeting -->
+    <div class="mb-8">
+      <h1 class="text-5xl font-bold text-gray-700">Good Morning 🌙</h1>
+      <h2 class="text-4xl font-bold text-gray-800 mt-1">Mr. Johnson Maduka</h2>
+    </div>
+
+    <!-- TOP ROW: Syllabus Guide + Students card -->
+    <div class="grid grid-cols-3 gap-7 mb-10">
+      
+      <!-- Syllabus Guide - NOW EXACTLY LIKE YOUR SCREENSHOT -->
+      <div class="col-span-2 bg-gradient-to-r from-[#162447] to-[#1f4068] rounded-2xl p-6 text-white">
+        <h3 class="text-lg font-semibold mb-5">Syllabus Guide</h3>
+        
+        <!-- Three cards in a row exactly as your screenshot shows -->
+        <div class="flex gap-4">
+          <!-- Card 1 - Basic Design (active) -->
+          <div class="bg-white text-gray-800 rounded-xl p-4 w-48 shadow-md">
+            <h4 class="font-semibold text-sm">Basic Design</h4>
+            <p class="text-xs text-gray-500">Introduction to Graphics Design</p>
+            <p class="text-xs text-gray-400 mt-3">25th March 2022</p>
+          </div>
+          
+          <!-- Card 2 - Basic Design (dimmed) -->
+          <div class="bg-white text-gray-800 rounded-xl p-4 w-48 opacity-60">
+            <h4 class="font-semibold text-sm">Basic Design</h4>
+            <p class="text-xs text-gray-500">Introduction to Graphics Design</p>
+            <p class="text-xs text-gray-400 mt-3">25th March 2002</p>
+          </div>
+          
+          <!-- Card 3 - Basic Design (dimmed) -->
+          <div class="bg-white text-gray-800 rounded-xl p-4 w-48 opacity-60">
+            <h4 class="font-semibold text-sm">Basic Design</h4>
+            <p class="text-xs text-gray-500">Introduction to Graphics Design</p>
+            <p class="text-xs text-gray-400 mt-3">8th April 2022</p>
+          </div>
+        </div>
+        
+        <!-- Navigation dots - exactly as screenshot -->
+        <div class="flex items-center gap-2 mt-6">
+          <span class="w-2 h-2 bg-gray-400 rounded-full"></span>
+          <span class="w-2 h-2 bg-white rounded-full"></span>
+          <span class="w-2 h-2 bg-gray-400 rounded-full"></span>
+        </div>
+      </div>
+
+      <!-- Students card – CORRECT two-color circle: YELLOW TOP, BLUE BOTTOM -->
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200">
+        <h3 class="text-lg font-semibold text-gray-800 mb-4">STUDENTS</h3>
+        
+        <div class="flex items-center gap-6">
+          <!-- Simple half-yellow half-blue circle -->
+          <div class="relative w-24 h-24 rounded-full overflow-hidden">
+            <!-- Yellow top half -->
+            <div class="absolute top-0 left-0 w-full h-1/2 bg-yellow-400"></div>
+            <!-- Blue bottom half -->
+            <div class="absolute bottom-0 left-0 w-full h-1/2 bg-blue-500"></div>
+            <!-- White inner circle to create ring effect -->
+            <div class="absolute inset-2 rounded-full bg-white flex items-center justify-center">
+              <span class="text-xl font-bold text-gray-800">308</span>
+            </div>
+          </div>
+          
+          <!-- Male/Female percentages -->
+          <div class="space-y-1">
+            <p class="text-sm text-gray-600">MALE (61%)</p>
+            <p class="text-sm text-gray-600">FEMALE (39%)</p>
+          </div>
+        </div>
+
+        <!-- Student Rankings - exactly as screenshot -->
+        <div class="mt-6 space-y-3">
+          <p class="text-sm font-semibold text-gray-700">Student Rankings</p>
+          <div class="flex items-center gap-3">
+            <span class="w-6 h-6 bg-yellow-400 text-white rounded-full text-xs flex items-center justify-center">1</span>
+            <span class="text-sm text-gray-600">ActivEdge Technologies</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="w-6 h-6 bg-yellow-300 text-white rounded-full text-xs flex items-center justify-center">2</span>
+            <span class="text-sm text-gray-600">ActivEdge Technologies</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="w-6 h-6 bg-yellow-200 text-white rounded-full text-xs flex items-center justify-center">3</span>
+            <span class="text-sm text-gray-600">ActivEdge Technologies</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== CURRENT ASSIGNMENTS ===== -->
+    <div class="mb-12">
+      <div class="flex items-center gap-2 mb-5">
+        <h3 class="text-lg font-semibold text-gray-700">Current Assignments</h3>
+        <i class='bx bx-play text-gray-500'></i>
+      </div>
+
+      <div class="flex gap-6">
+        <!-- Assignment Card 1 -->
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-200 w-72">
+          <h4 class="font-semibold text-sm">Basic Design</h4>
+          <p class="text-xs text-gray-500">Introduction to Graphics Design</p>
+          <div class="flex justify-between text-xs text-gray-500 mt-4">
+            <span>25th March 2022</span>
+            <span class="text-red-400">Not Submitted</span>
+          </div>
+        </div>
+        <!-- Assignment Card 2 -->
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-200 w-72">
+          <h4 class="font-semibold text-sm">Basic Design</h4>
+          <p class="text-xs text-gray-500">Introduction to Graphics Design</p>
+          <div class="flex justify-between text-xs text-gray-500 mt-4">
+            <span>25th March 2002</span>
+            <span class="text-green-600">Submitted</span>
+          </div>
+        </div>
+        <!-- Assignment Card 3 -->
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-200 w-72">
+          <h4 class="font-semibold text-sm">Basic Design</h4>
+          <p class="text-xs text-gray-500">Introduction to Graphics Design</p>
+          <div class="flex justify-between text-xs text-gray-500 mt-4">
+            <span>8th April 2022</span>
+            <span class="text-red-400">Not Submitted</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== STUDENT ATTENDANCE ===== -->
+    <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200">
+      <div class="flex justify-between items-center mb-5">
+        <h3 class="text-lg font-semibold text-gray-700">Student Attendance</h3>
+        <select class="text-sm border border-gray-300 rounded-lg px-4 py-2 bg-white">
+          <option>Week 6</option>
+        </select>
+      </div>
+
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="border-b border-gray-200 text-gray-400 text-left">
+            <th class="py-3">Name</th>
+            <th>Mon</th>
+            <th>Tues</th>
+            <th>Wed</th>
+            <th>Thurs</th>
+            <th>Fri</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="py-4">ActivEdge Technologies</td>
+            <td class="text-green-600">Present</td>
+            <td class="text-red-500">Absent</td>
+            <td class="text-green-600">Present</td>
+            <td class="text-green-600">Present</td>
+            <td><input type="checkbox"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <!-- ========== RIGHT PANEL ========= -->
+  <div class="w-80 p-7 pt-7 shrink-0 space-y-6">
+    <!-- Calendar -->
+    <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-200">
+      <h3 class="font-semibold text-gray-700 mb-3">April, 2022</h3>
+      <div class="grid grid-cols-7 text-xs text-center text-gray-500 mb-2">
+        <span class="text-orange-500">Sun</span> <span>Mon</span> <span>Tue</span> <span>Wed</span> <span>Thu</span> <span>Fri</span> <span>Sat</span>
+      </div>
+      <div class="grid grid-cols-7 text-xs text-center gap-1 text-gray-600">
+        <span class="text-gray-300">30</span> <span>31</span> <span>1</span> <span>2</span> <span>3</span> <span>4</span> <span>5</span>
+      </div>
+      <div class="text-xs text-blue-600 mt-3">Week 6</div>
+    </div>
+
+    <!-- Upcoming events -->
+    <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-200">
+      <h3 class="font-semibold text-gray-700 mb-4">Upcoming events</h3>
+      <div class="space-y-4">
+        <div class="border-l-4 border-yellow-400 bg-yellow-50 pl-3 py-2">
+          <p class="font-medium text-sm">Saturday</p>
+          <p class="text-xs text-gray-500">9th May 2022</p>
+        </div>
+        <div class="border-l-4 border-green-400 bg-green-50 pl-3 py-2">
+          <p class="font-medium text-sm">Saturday</p>
+          <p class="text-xs text-gray-500">5th June 2022</p>
+        </div>
+        <div class="border-l-4 border-pink-400 bg-pink-50 pl-3 py-2">
+          <p class="font-medium text-sm">Saturday</p>
+          <p class="text-xs text-gray-500">9th July 2022</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
